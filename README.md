@@ -3,7 +3,7 @@
 Descrição: Lista de Tarefas em React com funcionalidades Pesquisar, Filtrar e Criar Tarefa com seleção de Categoria.
 
 2) Instruções de Instalação:
-Como desenvolvedor sênior, vou fornecer instruções detalhadas sobre como clonar e instalar um software em React. Aqui estão os passos:
+Instruções detalhadas sobre como clonar e instalar um software em React. Aqui estão os passos:
 
 2.1. Requisitos:
    - Certifique-se de ter o Node.js instalado em seu sistema. Você pode verificar digitando `node -v` no terminal. Se não estiver instalado, faça o download e instale a versão mais recente do Node.js em https://nodejs.org.
