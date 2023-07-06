@@ -1,104 +1,175 @@
- body{
-  background-color: #fafafa;
-  font-family: arial;
-  padding: 30px;
-  color: #333;
-  background-image: url("./img/bg.jpg");
-  background-position: center;
-  background-size: cover;
- }
+/* Estilos gerais da aplicação */
 
- .app{
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #efefef;
-    padding: 20px 30px;
-    border-radius: 10px;
- }
-
- h1{
-    text-align: center;
- }
-
- h2{
-    margin-bottom: 10px;
+body {
+   background-color: #fafafa; /* Define a cor de fundo do body */
+   font-family: arial; /* Define a fonte utilizada */
+   padding: 30px; /* Adiciona um espaçamento interno ao body */
+   color: #333; /* Define a cor do texto */
+   background-image: url("./img/bg.jpg"); /* Define a imagem de fundo */
+   background-position: center; /* Define a posição da imagem de fundo */
+   background-size: cover; /* Define o dimensionamento da imagem de fundo */
  }
  
- p{
-    margin: 10px 0;
+ .app {
+   max-width: 600px; /* Define a largura máxima do componente .app */
+   margin: 0 auto; /* Centraliza o componente .app horizontalmente */
+   background-color: #efefef; /* Define a cor de fundo do componente .app */
+   padding: 20px 30px; /* Adiciona um espaçamento interno ao componente .app */
+   border-radius: 10px; /* Define o raio das bordas do componente .app */
  }
-
+ 
+ h1 {
+   text-align: center; /* Centraliza o texto do título h1 */
+ }
+ 
+ h2 {
+   margin-bottom: 10px; /* Adiciona um espaçamento inferior ao título h2 */
+ }
+ 
+ p {
+   margin: 10px 0; /* Adiciona um espaçamento ao redor dos parágrafos */
+ }
+ 
  input {
-    box-sizing: border-box;
+   box-sizing: border-box; /* Inclui a largura da borda no cálculo da largura do input */
  }
-
- button{
-    background-color: #333974;
-    color: #fff;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: 0.3s;
+ 
+ button {
+   background-color: #333974; /* Define a cor de fundo dos botões */
+   color: #fff; /* Define a cor do texto dos botões */
+   padding: 5px 10px; /* Adiciona um espaçamento interno aos botões */
+   margin-right: 10px; /* Adiciona um espaçamento à direita dos botões */
+   border: none; /* Remove as bordas dos botões */
+   border-radius: 3px; /* Define o raio das bordas dos botões */
+   cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre os botões */
+   opacity: 0.8; /* Define a opacidade inicial dos botões */
+   transition: 0.3s; /* Adiciona uma transição suave ao passar o mouse sobre os botões */
  }
-
+ 
  button:hover {
-    opacity: 1;
+   opacity: 1; /* Altera a opacidade dos botões ao passar o mouse sobre eles */
  }
-
+ 
+ /* Estilos relacionados às tarefas */
+ 
  .todo-list {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #555;
+   margin-bottom: 20px; /* Adiciona um espaçamento inferior à lista de tarefas */
+   padding-bottom: 20px; /* Adiciona um espaçamento interno inferior à lista de tarefas */
+   border-bottom: 1px solid #555; /* Adiciona uma borda inferior à lista de tarefas */
  }
-
+ 
  .todo {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   background-color: #fff; /* Define a cor de fundo dos itens de tarefa */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra aos itens de tarefa */
+   padding: 10px; /* Adiciona um espaçamento interno aos itens de tarefa */
+   margin-bottom: 10px; /* Adiciona um espaçamento inferior aos itens de tarefa */
+   border-radius: 5px;```css
+ /* Estilos gerais da aplicação */
+ 
+ body {
+   background-color: #fafafa; /* Define a cor de fundo do body */
+   font-family: arial; /* Define a fonte utilizada */
+   padding: 30px; /* Adiciona um espaçamento interno ao body */
+   color: #333; /* Define a cor do texto */
+   background-image: url("./img/bg.jpg"); /* Define a imagem de fundo */
+   background-position: center; /* Define a posição da imagem de fundo */
+   background-size: cover; /* Define o dimensionamento da imagem de fundo */
  }
-
+ 
+ .app {
+   max-width: 600px; /* Define a largura máxima do componente .app */
+   margin: 0 auto; /* Centraliza o componente .app horizontalmente */
+   background-color: #efefef; /* Define a cor de fundo do componente .app */
+   padding: 20px 30px; /* Adiciona um espaçamento interno ao componente .app */
+   border-radius: 10px; /* Define o raio das bordas do componente .app */
+ }
+ 
+ h1 {
+   text-align: center; /* Centraliza o texto do título h1 */
+ }
+ 
+ h2 {
+   margin-bottom: 10px; /* Adiciona um espaçamento inferior ao título h2 */
+ }
+ 
+ p {
+   margin: 10px 0; /* Adiciona um espaçamento ao redor dos parágrafos */
+ }
+ 
+ input {
+   box-sizing: border-box; /* Inclui a largura da borda no cálculo da largura do input */
+ }
+ 
+ button {
+   background-color: #333974; /* Define a cor de fundo dos botões */
+   color: #fff; /* Define a cor do texto dos botões */
+   padding: 5px 10px; /* Adiciona um espaçamento interno aos botões */
+   margin-right: 10px; /* Adiciona um espaçamento à direita dos botões */
+   border: none; /* Remove as bordas dos botões */
+   border-radius: 3px; /* Define o raio das bordas dos botões */
+   cursor: pointer; /* Altera o cursor para um ponteiro ao passar o mouse sobre os botões */
+   opacity: 0.8; /* Define a opacidade inicial dos botões */
+   transition: 0.3s; /* Adiciona uma transição suave ao passar o mouse sobre os botões */
+ }
+ 
+ button:hover {
+   opacity: 1; /* Altera a opacidade dos botões ao passar o mouse sobre eles */
+ }
+ 
+ /* Estilos relacionados às tarefas */
+ 
+ .todo-list {
+   margin-bottom: 20px; /* Adiciona um espaçamento inferior à lista de tarefas */
+   padding-bottom: 20px; /* Adiciona um espaçamento interno inferior à lista de tarefas */
+   border-bottom: 1px solid #555; /* Adiciona uma borda inferior à lista de tarefas */
+ }
+ 
+ .todo {
+   background-color: #fff; /* Define a cor de fundo dos itens de tarefa */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra aos itens de tarefa */
+   padding: 10px; /* Adiciona um espaçamento interno aos itens de tarefa */
+   margin-bottom: 10px; /* Adiciona um espaçamento inferior aos itens de tarefa */
+   border-radius: 5px;```css
+   display: flex; /* Permite que os itens de tarefa sejam exibidos em linha */
+   justify-content: space-between; /* Distribui os itens de tarefa igualmente no espaço disponível */
+   align-items: center; /* Centraliza verticalmente os itens de tarefa */
+ }
+ 
  .complete {
-    background-color: #5cb85c;
+   background-color: #5cb85c; /* Define a cor de fundo do botão de completar */
  }
-
- .remove{
-    background-color: #d9534f;
+ 
+ .remove {
+   background-color: #d9534f; /* Define a cor de fundo do botão de remover */
  }
-
+ 
  .todo-form {
-    padding-bottom: 1.5rem;
+   padding-bottom: 1.5rem; /* Adiciona um espaçamento inferior ao formulário de tarefa */
  }
-
+ 
  .input,
  .select {
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    width: 100%;
+   padding: 5px; /* Adiciona um espaçamento interno ao input e select */
+   margin-bottom: 10px; /* Adiciona um espaçamento inferior ao input e select */
+   border: 1px solid #ddd; /* Adiciona uma borda aos input e select */
+   border-radius: 3px; /* Define o raio das bordas dos input e select */
+   width: 100%; /* Define a largura dos input e select como 100% */
  }
-
+ 
  .filter,
  .search {
-    border-bottom: 1px solid #555;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+   border-bottom: 1px solid #555; /* Adiciona uma borda inferior às seções de filtro e pesquisa */
+   margin-bottom: 20px; /* Adiciona um espaçamento inferior às seções de filtro e pesquisa */
+   padding-bottom: 20px; /* Adiciona um espaçamento interno inferior às seções de filtro e pesquisa */
  }
-
+ 
  .filter-options {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+   display: flex; /* Permite que as opções de filtro sejam exibidas em linha */
+   justify-content: space-between; /* Distribui as opções de filtro igualmente no espaço disponível */
+   gap: 3rem; /* Adiciona um espaçamento horizontal entre as opções de filtro */
  }
-
+ 
  .filter-options div {
-    flex: 1 1 0;
+   flex: 1 1 0; /* Define a flexibilidade das divs dentro das opções de filtro */
  }
+ 

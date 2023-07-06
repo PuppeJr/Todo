@@ -1,15 +1,12 @@
 import { useState } from "react";
-
 import Todo from "./components/Todo";
-
 import Search from "./components/Search";
-
 import Filter from "./components/Filter";
-
 import "./App.css";
 import TodoForm from "./components/TodoForm";
 
 const App = () => {
+  // Estado para armazenar as tarefas
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -17,7 +14,12 @@ const App = () => {
       category: "Trabalho",
       isCompleted: false,
     },
-    { id: 2,text: "Ir para a academia", category: "Pessoal", isCompleted: false },
+    {
+      id: 2,
+      text: "Ir para a academia",
+      category: "Pessoal",
+      isCompleted: false,
+    },
     {
       id: 3,
       text: "Estudar React",
@@ -26,36 +28,50 @@ const App = () => {
     },
   ]);
 
+  // Estado para armazenar o filtro selecionado
   const [filter, setFilter] = useState("All");
+
+  // Estado para armazenar a ordenação selecionada
   const [sort, setSort] = useState("Asc");
 
+  // Estado para armazenar o texto de busca
   const [search, setSearch] = useState("");
 
+  // Função para adicionar uma nova tarefa
   const addTodo = (text, category) => {
-    const newTodos = [...todos, 
-      { id: Math.floor(Math.random() * 1000), text, category, isCompleted: false }
+    const newTodos = [
+      ...todos,
+      { id: Math.floor(Math.random() * 1000), text, category, isCompleted: false },
     ];
     setTodos(newTodos);
   };
 
+  // Função para remover uma tarefa
   const removeTodo = (id) => {
-    const newTodos = [...todos];
-    const filteredTodos = newTodos.filter((todo) => todo.id !== id ?  todo : null)
-    setTodos(filteredTodos);
+    const newTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(newTodos);
   };
 
+  // Função para marcar uma tarefa como concluída ou não concluída
   const completeTodo = (id) => {
-    const newTodos = [...todos];
-    newTodos.map((todo) => todo.id === id ?  todo.isCompleted = !todo.isCompleted : todo)
+    const newTodos = todos.map((todo) =>
+      todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+    );
     setTodos(newTodos);
   };
 
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
+
+      {/* Componente de busca */}
       <Search search={search} setSearch={setSearch} />
+
+      {/* Componente de filtro e ordenação */}
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
+
       <div className="todo-list">
+        {/* Renderização das tarefas filtradas, ordenadas e mapeadas */}
         {todos
           .filter((todo) =>
             filter === "All"
@@ -68,9 +84,7 @@ const App = () => {
             todo.text.toLowerCase().includes(search.toLowerCase())
           )
           .sort((a, b) =>
-            sort === "Asc"
-              ? a.text.localeCompare(b.text)
-              : b.text.localeCompare(a.text)
+            sort === "Asc" ? a.text.localeCompare(b.text) : b.text.localeCompare(a.text)
           )
           .map((todo, index) => (
             <Todo
@@ -82,6 +96,8 @@ const App = () => {
             />
           ))}
       </div>
+
+      {/* Componente de formulário para adicionar tarefas */}
       <TodoForm addTodo={addTodo} />
     </div>
   );
