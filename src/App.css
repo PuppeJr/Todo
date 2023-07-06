@@ -58,14 +58,6 @@ body {
    border-bottom: 1px solid #555; /* Adiciona uma borda inferior à lista de tarefas */
  }
  
- .todo {
-   background-color: #fff; /* Define a cor de fundo dos itens de tarefa */
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra aos itens de tarefa */
-   padding: 10px; /* Adiciona um espaçamento interno aos itens de tarefa */
-   margin-bottom: 10px; /* Adiciona um espaçamento inferior aos itens de tarefa */
-   border-radius: 5px;```css
- /* Estilos gerais da aplicação */
- 
  body {
    background-color: #fafafa; /* Define a cor de fundo do body */
    font-family: arial; /* Define a fonte utilizada */
