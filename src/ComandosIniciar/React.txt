@@ -1,0 +1,10 @@
+1)
+npm create vite@latest
+
+2)
+npm run dev
+
+3)
+
+
+
